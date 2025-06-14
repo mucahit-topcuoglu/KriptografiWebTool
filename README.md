@@ -14,13 +14,11 @@ Bu proje, AES ve RSA şifreleme algoritmaları ile SHA256 hash fonksiyonunu içe
 - Metin şifreleme ve çözme
 - 256-bit anahtar desteği
 - Base64 formatında şifrelenmiş çıktı
-- Güvenli AES-CBC modu
-- Otomatik IV (Initialization Vector) yönetimi
 
 ### Kullanım
 1. "AES" sekmesini seçin
 2. Şifrelenecek metni girin
-3. 32 karakterlik bir anahtar girin
+3. Bir anahtar girin
 4. "Şifrele" veya "Çöz" butonuna tıklayın
 5. Sonuç otomatik olarak kopyalanabilir formatta görüntülenecektir
 
@@ -76,20 +74,6 @@ Bu proje, AES ve RSA şifreleme algoritmaları ile SHA256 hash fonksiyonunu içe
    - "Hash'le" butonuna tıklayın
 4. Hash sonucu otomatik olarak kopyalanabilir formatta görüntülenecektir
 
-## Teknik Detaylar
-
-### Backend
-- .NET 6.0 Web API
-- RESTful API mimarisi
-- Swagger/OpenAPI desteği
-- CORS yapılandırması
-
-### Frontend
-- Responsive tasarım
-- Tab-based arayüz
-- Modern ve kullanıcı dostu UI
-- Bootstrap framework
-
 ## Kurulum
 
 1. Projeyi klonlayın:
@@ -117,17 +101,7 @@ dotnet run
 https://localhost:5001
 ```
 
-## Güvenlik Notları
 
-- AES anahtarı en az 32 karakter olmalıdır
-- RSA anahtarları güvenli bir şekilde saklanmalıdır
-- Private key asla paylaşılmamalıdır
-- Hassas veriler için HTTPS kullanılmalıdır
-- Şifrelenmiş veriler güvenli bir şekilde saklanmalıdır
-
-## Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
 
 ## İletişim
 - Email: mmucahittopcuoglu.com
