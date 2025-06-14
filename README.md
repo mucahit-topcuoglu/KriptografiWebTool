@@ -2,7 +2,7 @@
 
 Bu proje, AES ve RSA şifreleme algoritmaları ile SHA256 hash fonksiyonunu içeren bir web uygulamasıdır. Backend tarafında C# ve frontend tarafında HTML, CSS ve JavaScript kullanılarak geliştirilmiştir.
 
-## AES Şifreleme
+## AES 
 
 ### Ekran Görüntüleri
 #### AES Şifreleme
@@ -22,7 +22,7 @@ Bu proje, AES ve RSA şifreleme algoritmaları ile SHA256 hash fonksiyonunu içe
 4. "Şifrele" veya "Çöz" butonuna tıklayın
 5. Sonuç otomatik olarak kopyalanabilir formatta görüntülenecektir
 
-## RSA Şifreleme
+## RSA 
 
 ### Ekran Görüntüleri
 #### RSA Şifreleme
