@@ -50,9 +50,9 @@ Bu proje, AES ve RSA şifreleme algoritmaları ile SHA256 hash fonksiyonunu içe
 ## SHA256 Hash
 
 ### Ekran Görüntüleri
-#### SHA256 Metin Özeti
+#### SHA256 Metin Hashleme
 ![AES Şifreleme](CryptoSys/image/shametinozeti.png)
-#### SHA256 Dosya Özeti
+#### SHA256 Dosya Hashleme
 ![AES Şifre Çözme](CryptoSys/image/shadosyaozeti.png)
 
 
