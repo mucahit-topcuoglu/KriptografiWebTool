@@ -8,7 +8,6 @@ namespace CryptoAPI.Services
 {
     public class CryptoService
     {
-        // AES Encryption
         public string EncryptAES(string text, string key)
         {
             using (Aes aes = Aes.Create())
@@ -31,7 +30,6 @@ namespace CryptoAPI.Services
             }
         }
 
-        // AES Decryption
         public string DecryptAES(string encryptedText, string key)
         {
             using (Aes aes = Aes.Create())
@@ -68,7 +66,6 @@ namespace CryptoAPI.Services
             }
         }
 
-        // RSA Encryption
         public string EncryptRSA(string text, string publicKey)
         {
             if (string.IsNullOrEmpty(text))
@@ -99,7 +96,6 @@ namespace CryptoAPI.Services
             }
         }
 
-        // RSA Decryption
         public string DecryptRSA(string encryptedText, string privateKey)
         {
             if (string.IsNullOrEmpty(encryptedText))
@@ -130,7 +126,6 @@ namespace CryptoAPI.Services
             }
         }
 
-        // SHA256 Hash
         public string ComputeSHA256(string text)
         {
             if (string.IsNullOrEmpty(text))
@@ -143,7 +138,6 @@ namespace CryptoAPI.Services
             }
         }
 
-        // SHA256 File Hash
         public async Task<string> ComputeFileSHA256(Stream fileStream)
         {
             if (fileStream == null)
