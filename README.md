@@ -104,4 +104,4 @@ https://localhost:5001
 
 
 ## İletişim
-- Email: mmucahittopcuoglu.com
+- Email: mmucahittopcuoglu@gmail.com
