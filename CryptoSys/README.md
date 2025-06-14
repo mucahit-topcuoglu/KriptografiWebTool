@@ -130,4 +130,4 @@ https://localhost:5001
 Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
 
 ## İletişim
-- Email: mmucahittopcuoglu.com
+- Email: mmucahittopcuoglu@gmail.com
