@@ -1,0 +1,44 @@
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\obj\Debug\net6.0\CryptoAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\obj\Debug\net6.0\CryptoAPI.AssemblyInfoInputs.cache
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\obj\Debug\net6.0\CryptoAPI.AssemblyInfo.cs
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\obj\Debug\net6.0\CryptoAPI.csproj.CoreCompileInputs.cache
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\obj\Debug\net6.0\CryptoAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\bin\Debug\net6.0\CryptoAPI.staticwebassets.runtime.json
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\bin\Debug\net6.0\CryptoAPI.staticwebassets.endpoints.json
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\bin\Debug\net6.0\CryptoAPI.exe
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\bin\Debug\net6.0\CryptoAPI.deps.json
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\bin\Debug\net6.0\CryptoAPI.runtimeconfig.json
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\bin\Debug\net6.0\CryptoAPI.dll
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\bin\Debug\net6.0\CryptoAPI.pdb
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\obj\Debug\net6.0\CryptoAPI.csproj.AssemblyReference.cache
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\obj\Debug\net6.0\CryptoAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\obj\Debug\net6.0\scopedcss\bundle\CryptoAPI.styles.css
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\obj\Debug\net6.0\staticwebassets.build.json.cache
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\obj\Debug\net6.0\staticwebassets.build.endpoints.json
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\obj\Debug\net6.0\CryptoAPI.csproj.Up2Date
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\obj\Debug\net6.0\CryptoAPI.dll
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\obj\Debug\net6.0\refint\CryptoAPI.dll
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\obj\Debug\net6.0\CryptoAPI.pdb
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\obj\Debug\net6.0\CryptoAPI.genruntimeconfig.cache
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\obj\Debug\net6.0\ref\CryptoAPI.dll
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\bin\Debug\net6.0\wwwroot\js\script.js
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\bin\Debug\net6.0\wwwroot\index.html
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\Yeni klasör\bin\Debug\net6.0\wwwroot\css\style.css
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\CryptoSys\obj\Debug\net6.0\CryptoAPI.csproj.AssemblyReference.cache
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\CryptoSys\obj\Debug\net6.0\CryptoAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\CryptoSys\obj\Debug\net6.0\CryptoAPI.AssemblyInfoInputs.cache
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\CryptoSys\obj\Debug\net6.0\CryptoAPI.AssemblyInfo.cs
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\CryptoSys\obj\Debug\net6.0\CryptoAPI.csproj.CoreCompileInputs.cache
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\CryptoSys\obj\Debug\net6.0\CryptoAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\CryptoSys\obj\Debug\net6.0\CryptoAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\CryptoSys\obj\Debug\net6.0\scopedcss\bundle\CryptoAPI.styles.css
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\CryptoSys\obj\Debug\net6.0\CryptoAPI.dll
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\CryptoSys\obj\Debug\net6.0\refint\CryptoAPI.dll
+C:\Users\mucah\OneDrive\Masaüstü\Kriptografi\CryptoSys\obj\Debug\net6.0\CryptoAPI.pdb

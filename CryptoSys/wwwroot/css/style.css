@@ -1,0 +1,231 @@
+:root {
+    --primary-color: #4E89FF;
+    --success-color: #22C55E;
+    --dark-bg: #1E1E2F;
+    --light-bg: #FFFFFF;
+    --light-gray: #F4F4F7;
+    --text-dark: #1E1E2F;
+    --text-light: #FFFFFF;
+}
+
+[data-theme="dark"] {
+    --bg-color: var(--dark-bg);
+    --text-color: var(--text-light);
+    --card-bg: #2D2D44;
+    --input-bg: #3D3D54;
+    --border-color: #4D4D64;
+}
+
+[data-theme="light"] {
+    --bg-color: var(--light-bg);
+    --text-color: var(--text-dark);
+    --card-bg: var(--light-bg);
+    --input-bg: var(--light-gray);
+    --border-color: #E5E5EA;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.brand-icon {
+    font-size: 1.5rem;
+}
+
+.theme-switch {
+    margin-left: auto;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.form-control, .form-select {
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(78, 137, 255, 0.25);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #3D7AFF;
+    border-color: #3D7AFF;
+}
+
+.btn-secondary {
+    background-color: var(--light-gray);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.btn-secondary:hover {
+    background-color: #E5E5EA;
+}
+
+.btn-info {
+    background-color: #0EA5E9;
+    border-color: #0EA5E9;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #0284C7;
+    border-color: #0284C7;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-tabs .nav-link {
+    color: var(--text-color);
+    border: none;
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-tabs .nav-link:hover {
+    border: none;
+    color: var(--primary-color);
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--primary-color);
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.tab-icon {
+    font-size: 1.25rem;
+}
+
+.result-container {
+    position: relative;
+}
+
+.result-actions {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    z-index: 10;
+}
+
+.result-actions .btn {
+    background-color: var(--card-bg);
+    backdrop-filter: blur(4px);
+    border: 1px solid var(--border-color);
+}
+
+.result-actions .btn:hover {
+    background-color: var(--input-bg);
+}
+
+.result-container textarea {
+    padding-right: 120px;
+}
+
+.header-text h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.header-text .lead {
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.footer-text {
+    color: var(--text-color);
+    opacity: 0.8;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .header-text h1 {
+        font-size: 1.5rem;
+    }
+    
+    .result-actions {
+        position: static;
+        margin-top: 0.5rem;
+    }
+}
+
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    padding: 12px 24px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+} 

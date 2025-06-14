@@ -1,0 +1,108 @@
+[
+  {
+    "ContainingType": "CryptoAPI.Controllers.CryptoController",
+    "Method": "DecryptAES",
+    "RelativePath": "api/Crypto/aes/decrypt",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CryptoAPI.Controllers.AESRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CryptoAPI.Controllers.CryptoController",
+    "Method": "EncryptAES",
+    "RelativePath": "api/Crypto/aes/encrypt",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CryptoAPI.Controllers.AESRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CryptoAPI.Controllers.CryptoController",
+    "Method": "DecryptRSA",
+    "RelativePath": "api/Crypto/rsa/decrypt-text",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CryptoAPI.Controllers.RSADecryptRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CryptoAPI.Controllers.CryptoController",
+    "Method": "EncryptRSA",
+    "RelativePath": "api/Crypto/rsa/encrypt-text",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CryptoAPI.Controllers.RSAEncryptRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CryptoAPI.Controllers.CryptoController",
+    "Method": "GenerateRSAKeys",
+    "RelativePath": "api/Crypto/rsa/generate-keys",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CryptoAPI.Controllers.CryptoController",
+    "Method": "ComputeFileHash",
+    "RelativePath": "api/Crypto/sha256/file",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CryptoAPI.Controllers.CryptoController",
+    "Method": "ComputeTextHash",
+    "RelativePath": "api/Crypto/sha256/text",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CryptoAPI.Controllers.HashRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

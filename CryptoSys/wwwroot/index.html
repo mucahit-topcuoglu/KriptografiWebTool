@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoSys</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="brand-icon">🔐</span>
+                CryptoSys
+            </a>
+            <div class="theme-switch">
+                <button class="btn btn-outline-secondary" onclick="toggleTheme()">
+                    <span class="theme-icon">🌙</span>
+                    <span class="theme-text">Tema Değiştir</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="header-text text-center mb-4">
+            
+        </div>
+
+        <ul class="nav nav-tabs mb-4" id="cryptoTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="aes-tab" data-bs-toggle="tab" data-bs-target="#aes" type="button" role="tab">
+                    <span class="tab-icon">🔑</span> AES
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="rsa-tab" data-bs-toggle="tab" data-bs-target="#rsa" type="button" role="tab">
+                    <span class="tab-icon">🗝️</span> RSA
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="sha-tab" data-bs-toggle="tab" data-bs-target="#sha" type="button" role="tab">
+                    <span class="tab-icon">📂</span> SHA-256
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="cryptoTabsContent">
+            <div class="tab-pane fade show active" id="aes" role="tabpanel">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label">Metin</label>
+                            <textarea class="form-control" id="aesText" rows="3" placeholder="Şifrelemek veya çözmek istediğiniz metni girin"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Anahtar</label>
+                            <input type="text" class="form-control" id="aesKey" placeholder="Şifreleme anahtarını girin">
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-primary" onclick="encryptAES()">
+                                <span class="btn-icon">🔐</span> Şifrele
+                            </button>
+                            <button class="btn btn-secondary" onclick="decryptAES()">
+                                <span class="btn-icon">🔓</span> Çöz
+                            </button>
+                        </div>
+                        <div class="mt-4">
+                            <label class="form-label">Sonuç</label>
+                            <div class="result-container">
+                                <textarea class="form-control" id="aesResult" rows="3" readonly></textarea>
+                                <div class="result-actions">
+                                    <button class="btn btn-sm btn-outline-primary" onclick="copyResult('aesResult')">
+                                        <span class="btn-icon">📋</span> Kopyala
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary" onclick="downloadResult('aesResult')">
+                                        <span class="btn-icon">📥</span> İndir
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="rsa" role="tabpanel">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <button class="btn btn-info" onclick="generateRSAKeys()">
+                                <span class="btn-icon">🔑</span> RSA Anahtar Çifti Oluştur
+                            </button>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Public Key</label>
+                            <textarea class="form-control" id="rsaPublicKey" rows="2" readonly></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Private Key</label>
+                            <textarea class="form-control" id="rsaPrivateKey" rows="2" readonly></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Metin</label>
+                            <textarea class="form-control" id="rsaText" rows="3" placeholder="Şifrelemek veya çözmek istediğiniz metni girin"></textarea>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-primary" onclick="encryptRSA()">
+                                <span class="btn-icon">🔐</span> Şifrele
+                            </button>
+                            <button class="btn btn-secondary" onclick="decryptRSA()">
+                                <span class="btn-icon">🔓</span> Çöz
+                            </button>
+                        </div>
+                        <div class="mt-4">
+                            <label class="form-label">Sonuç</label>
+                            <div class="result-container">
+                                <textarea class="form-control" id="rsaResult" rows="3" readonly></textarea>
+                                <div class="result-actions">
+                                    <button class="btn btn-sm btn-outline-primary" onclick="copyResult('rsaResult')">
+                                        <span class="btn-icon">📋</span> Kopyala
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary" onclick="downloadResult('rsaResult')">
+                                        <span class="btn-icon">📥</span> İndir
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="sha" role="tabpanel">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label">Metin</label>
+                            <textarea class="form-control" id="hashText" rows="3" placeholder="Hash'ini hesaplamak istediğiniz metni girin"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">veya Dosya Yükle</label>
+                            <input type="file" class="form-control" id="hashFile">
+                        </div>
+                        <button class="btn btn-primary" onclick="computeHash()">
+                            <span class="btn-icon">🔄</span> Özetle
+                        </button>
+                        <div class="mt-4">
+                            <label class="form-label">SHA-256 Özeti</label>
+                            <div class="result-container">
+                                <textarea class="form-control" id="hashResult" rows="3" readonly></textarea>
+                                <br />
+                                <div class="result-actions">
+                                    <button class="btn btn-sm btn-outline-primary" onclick="copyResult('hashResult')">
+                                        <span class="btn-icon">📋</span> Kopyala
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary" onclick="downloadResult('hashResult')">
+                                        <span class="btn-icon">📥</span> İndir
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-text text-center mt-4">
+            <p>🔒</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html> 
